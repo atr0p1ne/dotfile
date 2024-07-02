@@ -3,7 +3,7 @@ call plug#begin('~/.local/share/nvim/plugged')
 
 Plug 'junegunn/fzf.vim'
 Plug 'tpope/vim-commentary'
-Plug 'bluz71/vim-nightfly-guicolors'
+Plug 'bluz71/vim-nightfly-colors', { 'as': 'nightfly' }
 
 call plug#end()
 
@@ -13,7 +13,7 @@ set number
 " Enable syntax highlighting
 syntax enable
 
-" Set colorscheme (choose your favorite)
+" Set colorscheme
 colorscheme nightfly
 
 " Indentation settings (adjust to your preference)
