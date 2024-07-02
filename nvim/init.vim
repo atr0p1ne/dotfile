@@ -1,4 +1,6 @@
-" Plugins
+" vim-plug setup
+call plug#begin('~/.local/share/nvim/plugged')
+
 Plug 'junegunn/fzf.vim'
 Plug 'tpope/vim-commentary'
 Plug 'bluz71/vim-nightfly-guicolors'
