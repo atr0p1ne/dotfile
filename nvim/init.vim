@@ -14,7 +14,7 @@ set number
 syntax enable
 
 " Set colorscheme (choose your favorite)
-colorscheme desert
+colorscheme nightfly
 
 " Indentation settings (adjust to your preference)
 set tabstop=4
