@@ -1,5 +1,9 @@
-" Specify the leader key
-let mapleader = ","
+" Plugins
+Plug 'junegunn/fzf.vim'
+Plug 'tpope/vim-commentary'
+Plug 'bluz71/vim-nightfly-guicolors'
+
+call plug#end()
 
 " Enable line numbers
 set number
@@ -20,9 +24,3 @@ set mouse=a
 
 " vim-plug setup
 call plug#begin('~/.local/share/nvim/plugged')
-
-" Example plugins
-Plug 'junegunn/fzf.vim'
-Plug 'tpope/vim-commentary'
-
-call plug#end()
