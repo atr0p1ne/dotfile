@@ -1,9 +1,9 @@
 " vim-plug setup
 call plug#begin('~/.local/share/nvim/plugged')
 
-Plug 'junegunn/fzf.vim'
+Plug 'nvim-tree/nvim-tree.lua'
 Plug 'tpope/vim-commentary'
-Plug 'bluz71/vim-nightfly-colors', { 'as': 'nightfly' }
+Plug 'bluz71/vim-nightfly-colors'
 
 call plug#end()
 
@@ -23,6 +23,3 @@ set expandtab
 
 " Enable mouse support in terminal
 set mouse=a
-
-" vim-plug setup
-call plug#begin('~/.local/share/nvim/plugged')
