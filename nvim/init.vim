@@ -4,6 +4,7 @@ call plug#begin('~/.local/share/nvim/plugged')
 Plug 'nvim-tree/nvim-web-devicons'
 Plug 'nvim-tree/nvim-tree.lua'
 Plug 'tpope/vim-commentary'
+Plug 'tpope/vim-surround'
 Plug 'bluz71/vim-nightfly-colors'
 
 call plug#end()
