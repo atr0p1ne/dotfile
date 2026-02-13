@@ -1,0 +1,43 @@
+# ── Directory Listings ─────────────────────────────────────────
+alias la='lsd --group-directories-first -lA'
+alias ll='lsd --group-directories-first -l'
+alias ls='lsd --group-directories-first'
+alias tree='tree -C'
+
+# ── Editors ────────────────────────────────────────────────────
+alias vim='nvim'
+
+# ── Git Comforts ───────────────────────────────────────────────
+alias g='git'
+alias gs='git status'
+alias ga='git add'
+alias gc='git commit'
+alias gp='git push'
+alias gl='git pull'
+alias gd='git diff'
+alias glg='git log --oneline --graph --decorate'
+
+# ── File Viewing ───────────────────────────────────────────────
+alias bat='bat --style=plain --paging=never --theme-dark=TwoDark'
+alias less='less -R'
+
+# -- File Manipulation ------------------------------------------
+alias rsync-mv='rsync -ah --info=progress2 --remove-source-files --prune-empty-dirs'
+alias rsync-cp='rsync -ah --info=progress2'
+
+# ── Networking ─────────────────────────────────────────────────
+alias pingf='ping -c 5'
+alias myip='curl ifconfig.me'
+
+
+# ── System & Utilities ────────────────────────────────────────────────
+alias diff='diff --color=auto'
+alias dmesg='dmesg --color=always | less -R'
+alias ip='ip --color=auto'
+alias reload='source ~/.zshrc'
+alias ports='sudo lsof -i -P -n'
+alias please='sudo $(fc -ln -1)'    # rerun last command with sudo
+alias usage='du -sh * | sort -h'    # quick directory disk usage
+
+# ── Safe Deletion ──────────────────────────────────────────────
+alias rmt='trash-put -v'
