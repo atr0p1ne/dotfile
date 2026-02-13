@@ -29,6 +29,11 @@ fi
 if [ -f $HOME/.zsh_aliases ]; then
     source $HOME/.zsh_aliases
 fi
+
 # ----- Misc ------------------------------------------------------------------
 # ---- Language environment
 export LANG=en_US.UTF-8
+
+# ----- Local Overrides -------------------------------------------------------
+[ -f "$HOME/.zshrc.local" ] && source "$HOME/.zshrc.local"
+[ -f "$HOME/.config/zsh/local.zsh" ] && source "$HOME/.config/zsh/local.zsh"
