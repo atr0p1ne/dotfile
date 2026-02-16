@@ -28,26 +28,26 @@ install_stow() {
   log "Detected OS: $os"
 
   case "$os" in
-    arch)
-      sudo pacman -Sy --needed stow
-      ;;
-    macos)
-      if ! command -v brew >/dev/null 2>&1; then
-        echo "Homebrew not found. Install brew first."
-        exit 1
-      fi
-      brew install stow
-      ;;
-    *)
-      echo "Unsupported OS. Install stow manually."
+  arch)
+    sudo pacman -Sy --needed stow
+    ;;
+  macos)
+    if ! command -v brew >/dev/null 2>&1; then
+      echo "Homebrew not found. Install brew first."
       exit 1
-      ;;
+    fi
+    brew install stow
+    ;;
+  *)
+    echo "Unsupported OS. Install stow manually."
+    exit 1
+    ;;
   esac
 }
 
 main() {
   install_stow
-  stow -d config -t "$HOME" -R nvim zsh git
+  stow -d config -t "$HOME" -R nvim tmux zsh
   log "Done."
 }
 
