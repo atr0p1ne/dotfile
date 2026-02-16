@@ -47,7 +47,7 @@ install_stow() {
 
 main() {
   install_stow
-  stow -d config -t "$HOME" -R nvim zsh git
+  stow -d config -t "$HOME" -R nvim tmux zsh
   log "Done."
 }
 
